@@ -10,16 +10,20 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    transition: all 1s ease; /* Adiciona transição para mudanças nos estilos */
+
 }
 
 .imagemancomputer {
     display: flex;
-    width: 50%; /* Use % para adaptar ao tamanho da tela */
+    width: 73%; /* Use % para adaptar ao tamanho da tela */
     height: 100vh;
     margin: 0 0 0 auto;  
     background-image: url(assets/read_news\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 1s ease; /* Adiciona transição para mudanças nos estilos */
+
 }
 
 .black-area {
@@ -28,7 +32,9 @@
     flex-basis: 40%;
     width: 50%; /* Use % para adaptar ao tamanho da tela */
     height: 100vh;
-    margin: 0 0 0 auto;  
+    margin: 0 0 0 auto; 
+    transition: all 1s ease; /* Adiciona transição para mudanças nos estilos */
+ 
 
 }
 
@@ -43,6 +49,7 @@
     margin-top: 92px;
     padding: 2rem;
     text-align: start;
+
 }
 
 .linha1 {
@@ -124,6 +131,8 @@ button {
     background: #FFF;
     width: 50vw;
     height: 48px;
+    transition: all 1s ease; /* Adiciona transição para mudanças nos estilos */
+
 }
 
 .email img {
@@ -170,4 +179,55 @@ button {
     height: 24px;    
 }
 
+/* Estilos para diferentes resoluções */
+@media (max-width: 430px) {
+    /* xs */
+    .container {
+        flex-basis: 100%;
+        width: 100%;
+        
+    }
+    .email input {
+        width: 280px;
+    }
+    .imagemancomputer {
+        display: none;
+    }
 
+    .black-area {
+        width: 100%;
+        height: auto;
+    }
+
+    .container img.logo {
+        padding: 1.8rem;
+        width: 289px;
+        height: 94px;
+        transform: scale(2);
+        transition: width 1s ease; /* Adicione uma transição suave */
+    }
+}
+
+@media (max-width: 800px) {
+    /* xs */
+    .container {
+        flex-basis: 100%;
+        width: 100%;
+        height: auto;
+        
+    }
+    .email input {
+        width: 50vw;
+
+    }
+    
+
+    .black-area {
+        width: 100%;
+    }
+
+    .container-geral img {
+        width: 100%;
+        height: auto;
+    }
+}
