@@ -12,12 +12,14 @@
     position: relative;
 }
 
-.container img {
+.imagemancomputer {
     display: flex;
-    flex-basis: 40%;
     width: 50%; /* Use % para adaptar ao tamanho da tela */
     height: 100vh;
     margin: 0 0 0 auto;  
+    background-image: url(assets/read_news\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .black-area {
@@ -120,7 +122,7 @@ button {
     text-indent: 10px;
     border: none;
     background: #FFF;
-    width: 65vw;
+    width: 50vw;
     height: 48px;
 }
 
@@ -164,8 +166,8 @@ button {
 
 .read-first img {
     align-items: center;
-    width: 48px;
-    height: 48px;    
+    width: 24px;
+    height: 24px;    
 }
 
 
