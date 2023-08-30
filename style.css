@@ -24,7 +24,7 @@
     background: var(--black, #121214);
     position: absolute;
     flex-basis: 40%;
-    width: 65%; /* Use % para adaptar ao tamanho da tela */
+    width: 50%; /* Use % para adaptar ao tamanho da tela */
     height: 100vh;
     margin: 0 0 0 auto;  
 
